@@ -29,26 +29,7 @@ import $ from 'jquery'
 //         }
 //     })
 // });
-document.addEventListener("DOMContentLoaded", function() {
-    // Filtering
-    var filterButtons = document.querySelectorAll('.filters_menu li');
-    var items = document.querySelectorAll('.all');
 
-    filterButtons.forEach(function(button) {
-      button.addEventListener('click', function() {
-        var filter = button.getAttribute('data-filter');
-        filterButtons.forEach(btn=>btn.classList.remove("active"))
-        button.classList.add("active")
-        items.forEach(function(item) {
-          if (filter === '*' || item.classList.contains(filter)) {
-            item.style.display = 'block';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-      });
-    });
-  });
 
 // // nice select
 // $(document).ready(function() {

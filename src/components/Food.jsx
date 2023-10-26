@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import f9 from "../assets/images/f9.png"
 import f8 from "../assets/images/f8.png"
 import f7 from "../assets/images/f7.png"
@@ -9,6 +9,25 @@ import p140 from "../assets/images/pave de saumon grille140DH.png"
 import p60 from "../assets/images/pizza altonno 60DH (1).png"
 import t75 from "../assets/images/tagine de poulet 75DH.png"
 const Food = () => {
+    useEffect(() => {
+        var filterButtons = document.querySelectorAll('.filters_menu li');
+        var items = document.querySelectorAll('.all');
+
+        filterButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                var filter = button.getAttribute('data-filter');
+                filterButtons.forEach(btn => btn.classList.remove("active"))
+                button.classList.add("active")
+                items.forEach(function (item) {
+                    if (filter === '*' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    },[])
     return (
         <section className="food_section layout_padding-bottom">
             <div className="container">
@@ -32,7 +51,7 @@ const Food = () => {
                             <div className="box">
                                 <div>
                                     <div className="img-box">
-                                        <img src={p60} alt=""/>
+                                        <img src={p60} alt="" />
                                     </div>
                                     <div className="detail-box">
                                         <h5>
@@ -46,7 +65,7 @@ const Food = () => {
                                                 60dh
                                             </h6>
                                             <a href="">
-                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{enableBackground:"new 0 0 456.029 456.029;"}} xmlSpace="preserve">
+                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
                                                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -108,7 +127,7 @@ const Food = () => {
                             <div className="box">
                                 <div>
                                     <div className="img-box">
-                                        <img src={t75} alt=""/>
+                                        <img src={t75} alt="" />
                                     </div>
                                     <div className="detail-box">
                                         <h5>
@@ -122,7 +141,7 @@ const Food = () => {
                                                 75dh
                                             </h6>
                                             <a href="">
-                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{enableBackground:"new 0 0 456.029 456.029;"}} xmlSpace="preserve">
+                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
                                                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -184,7 +203,7 @@ const Food = () => {
                             <div className="box">
                                 <div>
                                     <div className="img-box">
-                                        <img src={c70} alt=""/>
+                                        <img src={c70} alt="" />
                                     </div>
                                     <div className="detail-box">
                                         <h5>
@@ -198,7 +217,7 @@ const Food = () => {
                                                 70dh
                                             </h6>
                                             <a href="">
-                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{enableBackground:"new 0 0 456.029 456.029;"}} xmlSpace="preserve">
+                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
                                                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -260,7 +279,7 @@ const Food = () => {
                             <div className="box">
                                 <div>
                                     <div className="img-box">
-                                        <img src={e130} alt=""/>
+                                        <img src={e130} alt="" />
                                     </div>
                                     <div className="detail-box">
                                         <h5>
@@ -274,7 +293,7 @@ const Food = () => {
                                                 130dh
                                             </h6>
                                             <a href="">
-                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{enableBackground:"new 0 0 456.029 456.029;"}} xmlSpace="preserve">
+                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
                                                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -336,7 +355,7 @@ const Food = () => {
                             <div className="box">
                                 <div>
                                     <div className="img-box">
-                                        <img src={p140} alt=""/>
+                                        <img src={p140} alt="" />
                                     </div>
                                     <div className="detail-box">
                                         <h5>
@@ -350,7 +369,7 @@ const Food = () => {
                                                 140dh
                                             </h6>
                                             <a href="">
-                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{enableBackground:"new 0 0 456.029 456.029;"}} xmlSpace="preserve">
+                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
                                                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -412,7 +431,7 @@ const Food = () => {
                             <div className="box">
                                 <div>
                                     <div className="img-box">
-                                        <img src={p85} alt=""/>
+                                        <img src={p85} alt="" />
                                     </div>
                                     <div className="detail-box">
                                         <h5>
@@ -426,7 +445,7 @@ const Food = () => {
                                                 85dh
                                             </h6>
                                             <a href="">
-                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{enableBackground:"new 0 0 456.029 456.029;"}} xmlSpace="preserve">
+                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
                                                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -488,7 +507,7 @@ const Food = () => {
                             <div className="box">
                                 <div>
                                     <div className="img-box">
-                                        <img src={f7} alt=""/>
+                                        <img src={f7} alt="" />
                                     </div>
                                     <div className="detail-box">
                                         <h5>
@@ -502,7 +521,7 @@ const Food = () => {
                                                 90dh
                                             </h6>
                                             <a href="">
-                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{enableBackground:"new 0 0 456.029 456.029;"}} xmlSpace="preserve">
+                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
                                                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -564,7 +583,7 @@ const Food = () => {
                             <div className="box">
                                 <div>
                                     <div className="img-box">
-                                        <img src={f8} alt=""/>
+                                        <img src={f8} alt="" />
                                     </div>
                                     <div className="detail-box">
                                         <h5>
@@ -578,7 +597,7 @@ const Food = () => {
                                                 82dh
                                             </h6>
                                             <a href="">
-                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{enableBackground:"new 0 0 456.029 456.029;"}} xmlSpace="preserve">
+                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
                                                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -640,7 +659,7 @@ const Food = () => {
                             <div className="box">
                                 <div>
                                     <div className="img-box">
-                                        <img src={f9} alt=""/>
+                                        <img src={f9} alt="" />
                                     </div>
                                     <div className="detail-box">
                                         <h5>
@@ -654,7 +673,7 @@ const Food = () => {
                                                 110dh
                                             </h6>
                                             <a href="">
-                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{enableBackground:"new 0 0 456.029 456.029;"}} xmlSpace="preserve">
+                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
                                                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
