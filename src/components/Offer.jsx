@@ -3,16 +3,16 @@ import img1 from "../assets/images/o1.jpg"
 import img2 from "../assets/images/o2.jpg"
 const Offer = () => {
     return (
-        <section class="offer_section layout_padding-bottom">
-            <div class="offer_container">
-                <div class="container ">
-                    <div class="row">
-                        <div class="col-md-6  ">
-                            <div class="box ">
-                                <div class="img-box">
+        <section className="offer_section layout_padding-bottom">
+            <div className="offer_container">
+                <div className="container ">
+                    <div className="row">
+                        <div className="col-md-6  ">
+                            <div className="box ">
+                                <div className="img-box">
                                     <img src={img1} alt=""/>
                                 </div>
-                                <div class="detail-box">
+                                <div className="detail-box">
                                     <h5>
                                         Tasty Thursdays
                                     </h5>
@@ -76,12 +76,12 @@ const Offer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6  ">
-                            <div class="box ">
-                                <div class="img-box">
+                        <div className="col-md-6  ">
+                            <div className="box ">
+                                <div className="img-box">
                                     <img src={img2} alt=""/>
                                 </div>
-                                <div class="detail-box">
+                                <div className="detail-box">
                                     <h5>
                                         Pizza Days
                                     </h5>

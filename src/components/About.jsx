@@ -2,18 +2,18 @@ import React from 'react'
 import about from "../assets/images/about-img.png"
 const About = () => {
     return (
-        <section class="about_section layout_padding">
-            <div class="container  ">
+        <section className="about_section layout_padding">
+            <div className="container  ">
 
-                <div class="row">
-                    <div class="col-md-6 ">
-                        <div class="img-box">
+                <div className="row">
+                    <div className="col-md-6 ">
+                        <div className="img-box">
                             <img src={about} alt=""/>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="detail-box">
-                            <div class="heading_container">
+                    <div className="col-md-6">
+                        <div className="detail-box">
+                            <div className="heading_container">
                                 <h2>
                                     We Are get-together
                                 </h2>

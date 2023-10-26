@@ -10,38 +10,38 @@ import p60 from "../assets/images/pizza altonno 60DH (1).png"
 import t75 from "../assets/images/tagine de poulet 75DH.png"
 const Food = () => {
     return (
-        <section class="food_section layout_padding-bottom">
-            <div class="container">
-                <div class="heading_container heading_center">
+        <section className="food_section layout_padding-bottom">
+            <div className="container">
+                <div className="heading_container heading_center">
                     <h2>
                         Our Menu
                     </h2>
                 </div>
 
-                <ul class="filters_menu">
-                    <li class="active" data-filter="*">All</li>
-                    <li data-filter=".burger">Burger</li>
-                    <li data-filter=".pizza">Pizza</li>
-                    <li data-filter=".pasta">Pasta</li>
-                    <li data-filter=".fries">Fries</li>
+                <ul className="filters_menu">
+                    <li className="active" data-filter="*">All</li>
+                    <li data-filter="burger">Burger</li>
+                    <li data-filter="pizza">Pizza</li>
+                    <li data-filter="pasta">Pasta</li>
+                    <li data-filter="fries">Fries</li>
                 </ul>
 
-                <div class="filters-content">
-                    <div class="row grid">
-                        <div class="col-sm-6 col-lg-4 all pizza">
-                            <div class="box">
+                <div className="filters-content">
+                    <div className="row grid">
+                        <div className="col-sm-6 col-lg-4 all pizza">
+                            <div className="box">
                                 <div>
-                                    <div class="img-box">
+                                    <div className="img-box">
                                         <img src={p60} alt=""/>
                                     </div>
-                                    <div class="detail-box">
+                                    <div className="detail-box">
                                         <h5>
                                             Altonno Pizza
                                         </h5>
                                         <p>
                                             Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
                                         </p>
-                                        <div class="options">
+                                        <div className="options">
                                             <h6>
                                                 60dh
                                             </h6>
@@ -104,20 +104,20 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-4 all burger">
-                            <div class="box">
+                        <div className="col-sm-6 col-lg-4 all burger">
+                            <div className="box">
                                 <div>
-                                    <div class="img-box">
+                                    <div className="img-box">
                                         <img src={t75} alt=""/>
                                     </div>
-                                    <div class="detail-box">
+                                    <div className="detail-box">
                                         <h5>
                                             Tagine de poulet
                                         </h5>
                                         <p>
                                             Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
                                         </p>
-                                        <div class="options">
+                                        <div className="options">
                                             <h6>
                                                 75dh
                                             </h6>
@@ -180,20 +180,20 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-4 all pizza">
-                            <div class="box">
+                        <div className="col-sm-6 col-lg-4 all pizza">
+                            <div className="box">
                                 <div>
-                                    <div class="img-box">
+                                    <div className="img-box">
                                         <img src={c70} alt=""/>
                                     </div>
-                                    <div class="detail-box">
+                                    <div className="detail-box">
                                         <h5>
                                             Couscous
                                         </h5>
                                         <p>
                                             Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
                                         </p>
-                                        <div class="options">
+                                        <div className="options">
                                             <h6>
                                                 70dh
                                             </h6>
@@ -256,20 +256,20 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-4 all pasta">
-                            <div class="box">
+                        <div className="col-sm-6 col-lg-4 all pasta">
+                            <div className="box">
                                 <div>
-                                    <div class="img-box">
+                                    <div className="img-box">
                                         <img src={e130} alt=""/>
                                     </div>
-                                    <div class="detail-box">
+                                    <div className="detail-box">
                                         <h5>
                                             Entrote Grille
                                         </h5>
                                         <p>
                                             Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
                                         </p>
-                                        <div class="options">
+                                        <div className="options">
                                             <h6>
                                                 130dh
                                             </h6>
@@ -332,20 +332,20 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-4 all fries">
-                            <div class="box">
+                        <div className="col-sm-6 col-lg-4 all fries">
+                            <div className="box">
                                 <div>
-                                    <div class="img-box">
+                                    <div className="img-box">
                                         <img src={p140} alt=""/>
                                     </div>
-                                    <div class="detail-box">
+                                    <div className="detail-box">
                                         <h5>
                                             Pave de Saumon Grille
                                         </h5>
                                         <p>
                                             Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
                                         </p>
-                                        <div class="options">
+                                        <div className="options">
                                             <h6>
                                                 140dh
                                             </h6>
@@ -408,20 +408,20 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-4 all pizza">
-                            <div class="box">
+                        <div className="col-sm-6 col-lg-4 all pizza">
+                            <div className="box">
                                 <div>
-                                    <div class="img-box">
+                                    <div className="img-box">
                                         <img src={p85} alt=""/>
                                     </div>
-                                    <div class="detail-box">
+                                    <div className="detail-box">
                                         <h5>
                                             blanc de poulet farci aux epinardes
                                         </h5>
                                         <p>
                                             Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
                                         </p>
-                                        <div class="options">
+                                        <div className="options">
                                             <h6>
                                                 85dh
                                             </h6>
@@ -484,20 +484,20 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-4 all burger">
-                            <div class="box">
+                        <div className="col-sm-6 col-lg-4 all burger">
+                            <div className="box">
                                 <div>
-                                    <div class="img-box">
+                                    <div className="img-box">
                                         <img src={f7} alt=""/>
                                     </div>
-                                    <div class="detail-box">
+                                    <div className="detail-box">
                                         <h5>
                                             Tasty Burger
                                         </h5>
                                         <p>
                                             Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
                                         </p>
-                                        <div class="options">
+                                        <div className="options">
                                             <h6>
                                                 90dh
                                             </h6>
@@ -560,20 +560,20 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-4 all burger">
-                            <div class="box">
+                        <div className="col-sm-6 col-lg-4 all burger">
+                            <div className="box">
                                 <div>
-                                    <div class="img-box">
+                                    <div className="img-box">
                                         <img src={f8} alt=""/>
                                     </div>
-                                    <div class="detail-box">
+                                    <div className="detail-box">
                                         <h5>
                                             Chicken Burger
                                         </h5>
                                         <p>
                                             Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
                                         </p>
-                                        <div class="options">
+                                        <div className="options">
                                             <h6>
                                                 82dh
                                             </h6>
@@ -636,20 +636,20 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-4 all pasta">
-                            <div class="box">
+                        <div className="col-sm-6 col-lg-4 all pasta">
+                            <div className="box">
                                 <div>
-                                    <div class="img-box">
+                                    <div className="img-box">
                                         <img src={f9} alt=""/>
                                     </div>
-                                    <div class="detail-box">
+                                    <div className="detail-box">
                                         <h5>
                                             Delicious Pasta
                                         </h5>
                                         <p>
                                             Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
                                         </p>
-                                        <div class="options">
+                                        <div className="options">
                                             <h6>
                                                 110dh
                                             </h6>
@@ -714,7 +714,7 @@ const Food = () => {
                         </div>
                     </div>
                 </div>
-                <div class="btn-box">
+                <div className="btn-box">
                     <a href="">
                         View More
                     </a>

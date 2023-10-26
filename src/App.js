@@ -1,23 +1,19 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import About from './components/About';
-import Book from './components/Book';
-import Client from './components/Client';
-import Food from './components/Food';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Offer from './components/Offer';
+import AboutPage from './pages/AboutPage';
+import Home from './pages/Home';
+import BookPage from './pages/BookPage';
+import Menu from './pages/Menu';
 
 function App() {
   return (
-    <div className="App">
-      <Hero/>
-      <Offer/>
-      <Food />
-      <About/>
-      <Book/>
-      <Client/>
-      <Footer/>
-    </div>
+    <Routes>
+        <Route index element={<Home/>} />
+        <Route path='/about' element={<AboutPage/>} />
+        <Route path='/booking' element={<BookPage/>} />
+        <Route path='/menu' element={<Menu/>} />
+
+    </Routes>
   );
 }
 

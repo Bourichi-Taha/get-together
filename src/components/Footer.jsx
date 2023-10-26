@@ -7,15 +7,15 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 const Footer = () => {
     return (
-        <footer class="footer_section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 footer-col">
-                        <div class="footer_contact">
+        <footer className="footer_section">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-4 footer-col">
+                        <div className="footer_contact">
                             <h4>
                                 Contact Us
                             </h4>
-                            <div class="contact_link_box">
+                            <div className="contact_link_box">
                                 <a href="">
                                     <LocationOnIcon style={{marginRight:10}}/>
                                     <span>
@@ -37,15 +37,15 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 footer-col">
-                        <div class="footer_detail">
-                            <a href="" class="footer-logo">
+                    <div className="col-md-4 footer-col">
+                        <div className="footer_detail">
+                            <a href="" className="footer-logo">
                                 get-together
                             </a>
                             <p>
                                 Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
                             </p>
-                            <div class="footer_social">
+                            <div className="footer_social">
                                 <a href="">
                                     <FacebookIcon />
                                 </a>
@@ -58,7 +58,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 footer-col">
+                    <div className="col-md-4 footer-col">
                         <h4>
                             Opening Hours
                         </h4>
@@ -70,7 +70,7 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
-                <div class="footer-info">
+                <div className="footer-info">
                     <p>
                         &copy; <span id="displayYear"></span> All Rights Reserved By
                         <a href="#">Overlord</a><br /><br />
