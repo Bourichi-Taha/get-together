@@ -5,6 +5,7 @@ import React from 'react'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className="footer_section">
@@ -16,16 +17,16 @@ const Footer = () => {
                                 Contact Us
                             </h4>
                             <div className="contact_link_box">
-                                <a href="">
+                                <Link to="https://maps.app.goo.gl/iRcH5nPY31LVf5gf9">
                                     <LocationOnIcon style={{marginRight:10}}/>
                                     <span>
                                         Location
                                     </span>
-                                </a>
+                                </Link>
                                 <a href="">
                                     <LocalPhoneIcon style={{marginRight:10}}/>
                                     <span>
-                                        Call +01 1234567890
+                                        Call +212 661 681 420
                                     </span>
                                 </a>
                                 <a href="">
@@ -43,7 +44,7 @@ const Footer = () => {
                                 get-together
                             </a>
                             <p>
-                                Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+                            Feel free to join us on our social media platforms to stay updated with the latest news, offers, and culinary inspirations. Follow our journey, and be part of our vibrant online community. Your support and engagement mean the world to us!
                             </p>
                             <div className="footer_social">
                                 <a href="">

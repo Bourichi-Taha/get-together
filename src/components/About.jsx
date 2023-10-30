@@ -19,10 +19,7 @@ const About = () => {
                                 </h2>
                             </div>
                             <p>
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-                                in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-                                are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-                                the middle of text. All
+                            Our commitment to hospitality extends beyond what's on your plate. We understand that a great dining experience is about more than just the food. Our dedicated staff is here to ensure your time at get-together is nothing short of exceptional. From the moment you walk in, you're not just a guest; you're part of our family.
                             </p>
                             <a href="">
                                 Read More

@@ -19,15 +19,15 @@ const Hero = () => {
                                     <div className="col-md-7 col-lg-6 ">
                                         <div className="detail-box">
                                             <h1>
-                                                Fast Food Restaurant
+                                                get-together Restaurant
                                             </h1>
                                             <p>
-                                                Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                                            Indulge in Culinary Excellence: Our Hotel Restaurant Awaits Your Palate.
                                             </p>
                                             <div className="btn-box">
-                                                <a href="" className="btn1">
+                                                <Link to="/booking" className="btn1">
                                                     Order Now
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -40,15 +40,15 @@ const Hero = () => {
                                     <div className="col-md-7 col-lg-6 ">
                                         <div className="detail-box">
                                             <h1>
-                                                Fast Food Restaurant
+                                            get-together Restaurant
                                             </h1>
                                             <p>
-                                                Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                                            Culinary Delights at Your Doorstep: Savor the Flavors of Our Hotel Restaurant.
                                             </p>
                                             <div className="btn-box">
-                                                <a href="" className="btn1">
+                                            <Link to="/booking" className="btn1">
                                                     Order Now
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -61,15 +61,15 @@ const Hero = () => {
                                     <div className="col-md-7 col-lg-6 ">
                                         <div className="detail-box">
                                             <h1>
-                                                Fast Food Restaurant
+                                                Fast Restaurant
                                             </h1>
                                             <p>
-                                                Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                                            Elevate Your Dining Experience: Discover the Finest Cuisine at Our Hotel Restaurant.
                                             </p>
                                             <div className="btn-box">
-                                                <a href="" className="btn1">
+                                                <Link to="/booking" className="btn1">
                                                     Order Now
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

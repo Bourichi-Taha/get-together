@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-
+import logo from "../assets/images/logo app.png"
 const Navbar = () => {
     const location = useLocation();
 console.log(location.pathname)
@@ -10,9 +10,7 @@ console.log(location.pathname)
                 <div className="container">
                     <nav className="navbar navbar-expand-lg custom_nav-container ">
                         <Link className="navbar-brand" to={'/'}>
-                            <span>
-                                get-together
-                            </span>
+                            <img src={logo} alt="" style={{height:"80px"}} />
                         </Link>
 
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from "../assets/images/o1.jpg"
+import img1 from "../assets/images/couscous 70DH  .png"
 import img2 from "../assets/images/o2.jpg"
 const Offer = () => {
     return (
@@ -14,7 +14,7 @@ const Offer = () => {
                                 </div>
                                 <div className="detail-box">
                                     <h5>
-                                        Tasty Thursdays
+                                        Tasty Friday
                                     </h5>
                                     <h6>
                                         <span>20%</span> Off

@@ -1,14 +1,17 @@
 import React, { useEffect } from 'react'
-import f9 from "../assets/images/f9.png"
-import f8 from "../assets/images/f8.png"
-import f7 from "../assets/images/f7.png"
-import p85 from "../assets/images/blanc de poulet farci aux epinardes85DH.png"
-import e130 from "../assets/images/entrote grille130DH.png"
-import c70 from "../assets/images/couscous 70DH  .png"
-import p140 from "../assets/images/pave de saumon grille140DH.png"
-import p60 from "../assets/images/pizza altonno 60DH (1).png"
-import t75 from "../assets/images/tagine de poulet 75DH.png"
+import f9 from "../assets/images/tagine de boeuf 150D.png"
+import f8 from "../assets/images/pizza margheritta 50D.png"
+import f7 from "../assets/images/pizza classic 60DH.png"
+import p85 from "../assets/images/blanc de poulet farci aux epinardes85D.png"
+import e130 from "../assets/images/entrote grille130D.png"
+import c70 from "../assets/images/couscous.png"
+import p140 from "../assets/images/pave de saumon grille140D.png"
+import f3 from "../assets/images/f3.png"
+import t75 from "../assets/images/tagine-poulet.png"
+import { Link, useLocation } from 'react-router-dom'
+import menuPdf from "../assets/Menu _English(1).pdf"
 const Food = () => {
+    const location = useLocation();
     useEffect(() => {
         var filterButtons = document.querySelectorAll('.filters_menu li');
         var items = document.querySelectorAll('.all');
@@ -27,7 +30,21 @@ const Food = () => {
                 });
             });
         });
-    },[])
+    }, []);
+    let buttonMenu;
+    if (location.pathname === '/menu') {
+        buttonMenu = (
+            <Link to={menuPdf}>
+                View More
+            </Link>
+        )
+    } else {
+        buttonMenu = (
+            <Link to={"/menu"}>
+                View More
+            </Link>
+        )
+    }
     return (
         <section className="food_section layout_padding-bottom">
             <div className="container">
@@ -39,10 +56,9 @@ const Food = () => {
 
                 <ul className="filters_menu">
                     <li className="active" data-filter="*">All</li>
-                    <li data-filter="burger">Burger</li>
+                    <li data-filter="tagine">Tagine</li>
                     <li data-filter="pizza">Pizza</li>
-                    <li data-filter="pasta">Pasta</li>
-                    <li data-filter="fries">Fries</li>
+                    <li data-filter="specials">Specials</li>
                 </ul>
 
                 <div className="filters-content">
@@ -51,14 +67,14 @@ const Food = () => {
                             <div className="box">
                                 <div>
                                     <div className="img-box">
-                                        <img src={p60} alt="" />
+                                        <img src={f3} alt="" />
                                     </div>
                                     <div className="detail-box">
                                         <h5>
                                             Altonno Pizza
                                         </h5>
                                         <p>
-                                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                        This pizza is adorned with a melody of exquisite ingredients, with flaky chunks of tuna as the star of the show.
                                         </p>
                                         <div className="options">
                                             <h6>
@@ -123,7 +139,7 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-lg-4 all burger">
+                        <div className="col-sm-6 col-lg-4 all tagine">
                             <div className="box">
                                 <div>
                                     <div className="img-box">
@@ -134,7 +150,7 @@ const Food = () => {
                                             Tagine de poulet
                                         </h5>
                                         <p>
-                                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                        Tender chicken, marinated with a blend of aromatic spices, simmers to perfection in a traditional clay tagine.
                                         </p>
                                         <div className="options">
                                             <h6>
@@ -199,7 +215,7 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-lg-4 all pizza">
+                        <div className="col-sm-6 col-lg-4 all specials">
                             <div className="box">
                                 <div>
                                     <div className="img-box">
@@ -210,7 +226,7 @@ const Food = () => {
                                             Couscous
                                         </h5>
                                         <p>
-                                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                        Experience the timeless allure of couscous at our tables, and let its humble elegance transport you to sun-drenched landscapes and vibrant markets of the Mediterranean.
                                         </p>
                                         <div className="options">
                                             <h6>
@@ -275,7 +291,7 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-lg-4 all pasta">
+                        <div className="col-sm-6 col-lg-4 all specials">
                             <div className="box">
                                 <div>
                                     <div className="img-box">
@@ -286,7 +302,7 @@ const Food = () => {
                                             Entrote Grille
                                         </h5>
                                         <p>
-                                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                        This dish stars a premium cut of entrecôte steak, carefully seasoned and masterfully grilled to succulent perfection.
                                         </p>
                                         <div className="options">
                                             <h6>
@@ -351,7 +367,7 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-lg-4 all fries">
+                        <div className="col-sm-6 col-lg-4 all specials">
                             <div className="box">
                                 <div>
                                     <div className="img-box">
@@ -362,7 +378,7 @@ const Food = () => {
                                             Pave de Saumon Grille
                                         </h5>
                                         <p>
-                                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                        A thick cut of fresh salmon, carefully seasoned and seared to perfection, takes center stage in this dish.
                                         </p>
                                         <div className="options">
                                             <h6>
@@ -427,7 +443,7 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-lg-4 all pizza">
+                        <div className="col-sm-6 col-lg-4 all specials">
                             <div className="box">
                                 <div>
                                     <div className="img-box">
@@ -438,7 +454,7 @@ const Food = () => {
                                             blanc de poulet farci aux epinardes
                                         </h5>
                                         <p>
-                                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                        This dish features a boneless chicken breast meticulously stuffed with a flavorful blend of fresh spinach, and savory seasonings.
                                         </p>
                                         <div className="options">
                                             <h6>
@@ -503,7 +519,7 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-lg-4 all burger">
+                        <div className="col-sm-6 col-lg-4 all pizza">
                             <div className="box">
                                 <div>
                                     <div className="img-box">
@@ -511,10 +527,10 @@ const Food = () => {
                                     </div>
                                     <div className="detail-box">
                                         <h5>
-                                            Tasty Burger
+                                            Pizza classic
                                         </h5>
                                         <p>
-                                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                        It features a crispy, thin crust, expertly hand-tossed to perfection and topped with a symphony of classic ingredients.
                                         </p>
                                         <div className="options">
                                             <h6>
@@ -579,7 +595,7 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-lg-4 all burger">
+                        <div className="col-sm-6 col-lg-4 all pizza">
                             <div className="box">
                                 <div>
                                     <div className="img-box">
@@ -587,10 +603,10 @@ const Food = () => {
                                     </div>
                                     <div className="detail-box">
                                         <h5>
-                                            Chicken Burger
+                                            Pizza margheritta
                                         </h5>
                                         <p>
-                                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                        It's a dish that invites you to savor the simplicity of Italian cuisine, where the quality of ingredients shines through.
                                         </p>
                                         <div className="options">
                                             <h6>
@@ -655,7 +671,7 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-lg-4 all pasta">
+                        <div className="col-sm-6 col-lg-4 all tagine">
                             <div className="box">
                                 <div>
                                     <div className="img-box">
@@ -663,10 +679,10 @@ const Food = () => {
                                     </div>
                                     <div className="detail-box">
                                         <h5>
-                                            Delicious Pasta
+                                            Tagine de boeuf
                                         </h5>
                                         <p>
-                                            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                        Indulge in the enchanting flavors of our Tagine de Bœuf and let your palate journey to the vibrant streets of Morocco.
                                         </p>
                                         <div className="options">
                                             <h6>
@@ -734,9 +750,7 @@ const Food = () => {
                     </div>
                 </div>
                 <div className="btn-box">
-                    <a href="">
-                        View More
-                    </a>
+                    {buttonMenu}
                 </div>
             </div>
         </section>
