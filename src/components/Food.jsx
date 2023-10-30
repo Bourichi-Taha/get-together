@@ -80,7 +80,7 @@ const Food = () => {
                                             <h6>
                                                 60dh
                                             </h6>
-                                            <a href="">
+                                            <Link href="">
                                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
@@ -133,7 +133,7 @@ const Food = () => {
                                                     <g>
                                                     </g>
                                                 </svg>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -156,7 +156,7 @@ const Food = () => {
                                             <h6>
                                                 75dh
                                             </h6>
-                                            <a href="">
+                                            <Link to="/booking">
                                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
@@ -209,7 +209,7 @@ const Food = () => {
                                                     <g>
                                                     </g>
                                                 </svg>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -232,7 +232,7 @@ const Food = () => {
                                             <h6>
                                                 70dh
                                             </h6>
-                                            <a href="">
+                                            <Link to="/booking">
                                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
@@ -285,7 +285,7 @@ const Food = () => {
                                                     <g>
                                                     </g>
                                                 </svg>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -308,7 +308,8 @@ const Food = () => {
                                             <h6>
                                                 130dh
                                             </h6>
-                                            <a href="">
+                                            <Link to="/booking">
+
                                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
@@ -361,7 +362,7 @@ const Food = () => {
                                                     <g>
                                                     </g>
                                                 </svg>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -384,7 +385,8 @@ const Food = () => {
                                             <h6>
                                                 140dh
                                             </h6>
-                                            <a href="">
+                                            <Link to="/booking">
+
                                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
@@ -437,7 +439,7 @@ const Food = () => {
                                                     <g>
                                                     </g>
                                                 </svg>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -460,7 +462,8 @@ const Food = () => {
                                             <h6>
                                                 85dh
                                             </h6>
-                                            <a href="">
+                                            <Link to="/booking">
+
                                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
@@ -513,7 +516,7 @@ const Food = () => {
                                                     <g>
                                                     </g>
                                                 </svg>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -536,7 +539,8 @@ const Food = () => {
                                             <h6>
                                                 90dh
                                             </h6>
-                                            <a href="">
+                                            <Link to="/booking">
+
                                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
@@ -589,7 +593,7 @@ const Food = () => {
                                                     <g>
                                                     </g>
                                                 </svg>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -612,7 +616,8 @@ const Food = () => {
                                             <h6>
                                                 82dh
                                             </h6>
-                                            <a href="">
+                                            <Link to="/booking">
+
                                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
@@ -665,7 +670,7 @@ const Food = () => {
                                                     <g>
                                                     </g>
                                                 </svg>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -688,7 +693,8 @@ const Food = () => {
                                             <h6>
                                                 110dh
                                             </h6>
-                                            <a href="">
+                                            <Link to="/booking">
+
                                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: "new 0 0 456.029 456.029;" }} xmlSpace="preserve">
                                                     <g>
                                                         <g>
@@ -741,7 +747,7 @@ const Food = () => {
                                                     <g>
                                                     </g>
                                                 </svg>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
