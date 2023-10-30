@@ -1,6 +1,20 @@
-import React from 'react'
-
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser';
 const Book = () => {
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_k8qdyrq', 'template_66c1624', form.current, "user_DLi4HUetQbj9btmASRcdz")
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    form.current.reset();
+    document.querySelector("select.form-control.nice-select.wide").value = "";
+  };
     return (
         <section className="book_section layout_padding">
             <div className="container">
@@ -12,40 +26,43 @@ const Book = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <div className="form_container">
-                            <form action="">
+                            <form ref={form}  onSubmit={sendEmail}>
                                 <div>
-                                    <input type="text" className="form-control" placeholder="Your Name" />
+                                    <input name="user_name" type="text" className="form-control" placeholder="Your Name" />
                                 </div>
                                 <div>
-                                    <input type="text" className="form-control" placeholder="Phone Number" />
+                                    <input name="user_phone" type="text" className="form-control" placeholder="Phone Number" />
                                 </div>
                                 <div>
-                                    <input type="email" className="form-control" placeholder="Your Email" />
+                                    <input name='user_email' type="email" className="form-control" placeholder="Your Email" />
                                 </div>
                                 <div>
-                                    <select className="form-control nice-select wide">
+                                    <select name='number_persons' className="form-control nice-select wide">
                                         <option value="" disabled selected>
                                             How many persons?
                                         </option>
-                                        <option value="">
+                                        <option value="1">
+                                            1
+                                        </option>
+                                        <option value="2">
                                             2
                                         </option>
-                                        <option value="">
+                                        <option value="3">
                                             3
                                         </option>
-                                        <option value="">
+                                        <option value="4">
                                             4
                                         </option>
-                                        <option value="">
+                                        <option value="5">
                                             5
                                         </option>
                                     </select>
                                 </div>
                                 <div>
-                                    <input type="date" className="form-control"/>
+                                    <input name='date' type="date" className="form-control"/>
                                 </div>
                                 <div className="btn_box">
-                                    <button>
+                                    <button type='submit'>
                                         Book Now
                                     </button>
                                 </div>

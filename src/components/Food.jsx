@@ -215,7 +215,7 @@ const Food = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-lg-4 all specials">
+                        <div className="col-sm-6 col-lg-4 all tagine">
                             <div className="box">
                                 <div>
                                     <div className="img-box">
@@ -451,7 +451,7 @@ const Food = () => {
                                     </div>
                                     <div className="detail-box">
                                         <h5>
-                                            blanc de poulet farci aux epinardes
+                                            blanc poulet farci aux epinardes
                                         </h5>
                                         <p>
                                         This dish features a boneless chicken breast meticulously stuffed with a flavorful blend of fresh spinach, and savory seasonings.
