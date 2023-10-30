@@ -32,7 +32,7 @@ const Footer = () => {
                                 <a href="">
                                     <MailIcon style={{marginRight:10}}/>
                                     <span>
-                                        demo@gmail.com
+                                        tangerapphotel@gmail.com
                                     </span>
                                 </a>
                             </div>
