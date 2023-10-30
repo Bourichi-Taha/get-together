@@ -6,18 +6,23 @@
   .hero_area {
     min-height: auto;
   }
+  .custom_nav-container .navbar-nav {
+    padding-left: 0;
+  }
 
   .custom_nav-container .navbar-nav {
+    padding-left: 0;
     padding-top: 15px;
-padding-left: 0;
     align-items: center;
   }
+  
 
   .user_option{
     justify-content: center;
     margin-top: 15px;
   }
   .custom_nav-container .navbar-nav .nav-item .nav-link {
+    padding-left: 0;
     padding: 5px 25px;
     margin: 5px 0;
   }
@@ -44,7 +49,9 @@ padding-left: 0;
   .book_section .form_container {
     margin-bottom: 45px;
   }
-
+  .custom_nav-container .navbar-nav {
+    padding-left: 0;
+  }
   .about_section .row {
     flex-direction: column-reverse;
   }

@@ -308,7 +308,11 @@ a:focus {
           transform: rotate(90deg);
   top: 0;
 }
-
+@media screen and (max-width:924px) {
+  .custom_nav-container .navbar-nav {
+    padding-left: 0;
+  }
+}
 /*end header section*/
 /* slider section */
 .slider_section {

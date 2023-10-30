@@ -314,7 +314,14 @@ a:focus {
 
   }
 }
-
+@media screen and (max-width:924px) {
+  .custom_nav-container {
+    padding: 0;
+  
+    .navbar-nav {
+      padding-left: 0;
+    }}  
+}
 /*end header section*/
 
 /* slider section */
