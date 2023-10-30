@@ -1,5 +1,5 @@
 import React from 'react'
-import img from "../assets/images/hero-bg.jpg"
+import img from "../assets/images/hero.jpg"
 import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 const Hero = () => {

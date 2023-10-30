@@ -6,10 +6,12 @@ import About from '../components/About'
 import Book from '../components/Book'
 import Client from '../components/Client'
 import Footer from '../components/Footer'
+import ScrollToTop from '../components/ScrollToTop'
 
 const Home = () => {
     return (
         <div className="App">
+            <ScrollToTop />
             <Hero />
             <Offer />
             <Food />

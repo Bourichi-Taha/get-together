@@ -34,7 +34,7 @@ const Food = () => {
     let buttonMenu;
     if (location.pathname === '/menu') {
         buttonMenu = (
-            <Link to={menuPdf}>
+            <Link download={menuPdf} target='_blank'>
                 View More
             </Link>
         )

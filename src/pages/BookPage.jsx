@@ -2,13 +2,15 @@ import React from 'react'
 import Book from '../components/Book'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import ScrollToTop from '../components/ScrollToTop'
 
 const BookPage = () => {
   return (
     <div>
-        <Navbar />
-        <Book />
-        <Footer />
+      <ScrollToTop />
+      <Navbar />
+      <Book />
+      <Footer />
     </div>
   )
 }
